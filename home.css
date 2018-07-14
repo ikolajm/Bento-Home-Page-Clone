@@ -85,12 +85,12 @@ ul,
 }
 
 .picture1-info button {
-font-family: 'Bitter', sans-serif;
-color: white;
-border-style: none;
-background: #3da75e;
-border: 0%;
-border-radius: 3px;
+  font-family: 'Bitter', sans-serif;
+  color: white;
+  border-style: none;
+  background: #3da75e;
+  border: 0%;
+  border-radius: 3px;
 }
 
 /*Client List*/
