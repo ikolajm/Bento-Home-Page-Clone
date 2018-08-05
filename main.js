@@ -60,8 +60,8 @@ var $divs = $('div[class^="client-group"]').hide(),
 
 (function cycle() {
     $divs.eq(i).fadeIn(400)
-              .delay(2000)
-              .fadeOut(400, cycle);
+               .delay(2000)
+               .fadeOut(400, cycle);
 
     i = ++i % $divs.length;
 })();
@@ -94,11 +94,5 @@ $joeDot.click(function jenclick() {
     $joe.css('display', 'block');
       $joeDot.addClass('active');
 });
-
-
-
-
-
-
 
 //

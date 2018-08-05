@@ -1,0 +1,1051 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Lato', sans-serif;
+}
+
+.main-container {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+
+li {
+    display: inline-block;
+    float: left;
+}
+
+/*---*/
+
+/*Header*/
+
+#header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 100;
+  background: transparent;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+.logo img {
+  filter: invert(100%);
+  height: 40px;
+}
+
+.logo p {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.25rem;
+}
+
+nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #3da75e;
+  text-align: center;
+}
+
+nav ul {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+nav li {
+  display: inline-block;
+  float: left;
+  font-size: 1.5rem
+}
+
+ul,
+#icon,
+.social-nav,
+.logo p {
+  color: white;
+}
+
+.gs-contain {
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.get-started {
+  border: 2px solid;
+  border-radius: 10px;
+  display: inline;
+  padding: 8px;
+}
+
+
+.social-nav {
+  margin-top: 30px;
+}
+
+.social-nav i  {
+  font-size: 1.75rem;
+  padding: .25rem;
+}
+
+.drop-container {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  padding: 5px;
+  width: 38.25px;
+  height: 32px;
+}
+
+  /*START MEDIA QUERIES*/
+
+  @media screen and (min-width: 700px) {
+
+    .logo {
+      position: relative;
+      z-index: 100;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    nav {
+      display: inline-block;
+      width: auto;
+      text-align: inherit;
+      position: relative;
+      background: transparent;
+    }
+
+    nav ul {
+      display: inline-block;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    nav li {
+      display: block;
+      font-size: 1.25rem;
+      padding-left: 12px;
+    }
+
+    .gs-contain {
+      display: none;
+    }
+
+    .get-started {
+      display: none;
+    }
+
+    .social-nav {
+      display: none;
+    }
+
+    .drop-container {
+      display: none;
+    }
+
+  }
+
+  @media screen and (min-width: 1400px) {
+
+    .logo img {
+      height: 65px;
+    }
+
+    .logo p {
+      font-size: 1.5rem;
+    }
+
+  }
+
+  /*END MEDIA QUERIES*/
+
+/*---*/
+
+/*WELCOME IMAGE*/
+
+.picture1 {
+  background: url(https://www.popsci.com/sites/popsci.com/files/styles/1000_1x_/public/images/2017/08/woman-typing-writing-windows.jpg?itok=fVZAm0wd&fc=50,50);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+}
+
+.overlay1 {
+  background: rgba(0, 0, 0, .5);
+  position: absolute;
+  z-index: 2;
+  height: 100vh;
+  width: 100%;
+}
+
+.wc-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.picture1-info {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+}
+
+.picture1-info h1 {
+  font-size: 2.25rem;
+  width: 75%;
+  margin: auto;
+}
+
+.picture1-info button {
+  color: white;
+  border-style: none;
+  background: #3da75e;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  margin-top: 2vh;
+  padding: 15px;
+}
+
+  /*START MEDIA QUERY*/
+
+  @media screen and (min-width: 1400px) {
+
+    .picture1-info h1 {
+      font-size: 3.25rem;
+    }
+
+    .picture1-info button {
+      font-size: 2.25rem;
+    }
+
+  }
+
+  /*END MEDIA QUERY*/
+
+/*---*/
+
+/*CLIENT LIST*/
+
+.client-contain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  z-index: 2;
+  width: 85%;
+}
+
+.client-contain p {
+  color: white;
+  font-size: 1.15rem;
+  margin-top: 3vh;
+}
+
+.client-group1,
+.client-group2  {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3vh;
+}
+
+.client-group1 div,
+.client-group2 div {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  text-align: center;
+  margin: auto;
+}
+
+.client-group1 img,
+.client-group2 img {
+  height: 12vh;
+  width: 25vw;
+}
+
+  /*START MEDIA QUERY*/
+
+  @media screen and (min-width:500px) {
+
+    .client-contain  {
+      padding: 1.5rem;
+    }
+
+    .client-group1 div,
+    .client-group2 div {
+      width: 25%;
+    }
+
+  }
+
+  @media screen and (min-width: 1400px) {
+
+    .client-contain {
+      width: 50%;
+    }
+
+    .client-contain p {
+      font-size: 1.5rem;
+    }
+
+  }
+
+  /*END MEDIA QUERY*/
+
+/*---*/
+
+/*INFORMATIONAL DIV*/
+
+.info-plain {
+  line-height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.info-plain p {
+  width: 80%;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+  /*START MEDIA QUERY*/
+
+  @media screen and (min-width: 700px) {
+
+    .info-plain p {
+      width: 75%;
+      padding: 1.5rem;
+    }
+
+  }
+
+  @media screen and (min-width: 1400px) {
+
+    .info-plain {
+      padding: 1.5rem;
+    }
+
+    .info-plain p {
+      width: 65%;
+      font-size: 1.5rem;
+    }
+
+  }
+
+  /*END MEDIA QUERY*/
+
+/*---*/
+
+/*TESTIMONY*/
+
+.carousel-inner {
+  line-height: 1.3rem;
+}
+
+.carousel-item {
+  height: 350px;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-caption {
+  border-radius: 40px;
+}
+
+.carousel-caption h5,
+.carousel-caption h6 {
+  overflow-y: hidden;
+}
+
+.carousel-caption button {
+  color: white;
+  background-color: #2b2c32;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+  padding: 15px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: .8;
+}
+
+  /*START MEDIA QUERY*/
+
+  @media screen and (max-width: 500px) {
+
+    .carousel-caption p {
+      font-size: .75rem;
+    }
+
+  }
+
+  @media screen and (min-width: 501px) {
+
+    .carousel-item {
+      height: 500px;
+    }
+
+  }
+
+  @media screen and (min-width: 1400px) {
+
+    .carousel-item {
+      height: 775px;
+    }
+
+    .carousel-caption p {
+      width: 80%;
+      margin: auto;
+    }
+
+  }
+
+  /*END MEDIA QUERY*/
+
+/*---*/
+
+/*Laptop Section*/
+
+.laptop-section-contain {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid rgba(53, 53, 53, 0.15);
+}
+
+.laptop-text {
+  text-align: center;
+  width: 85%;
+  margin: auto;
+}
+
+.laptop-text h1 {
+  color: #2b2c32;
+  font-size: 1.25rem;
+  padding-bottom: .5rem;
+  width: 85%;
+  margin: auto;
+}
+
+.laptop-text p {
+  color: #2b2c32;
+  font-size: .8rem;
+  line-height: 1.25em;
+  width: 85%;
+  margin: auto;
+}
+
+.laptop-text button {
+  font-family: 'Bitter', sans-serif;
+  color: white;
+  background-color: #2b2c32;
+  border: none;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.laptop-img-container {
+  display: none;
+}
+
+.laptop-img-container img {
+  overflow: hidden;
+}
+
+  /*START MEDIA QUERY*/
+
+  @media screen and (min-width:700px) {
+
+    .laptop-section-contain {
+      display: flex;
+      align-items: center;
+    }
+
+    .laptop-text {
+      width: 50%;
+      float: left;
+    }
+
+    .laptop-text h1 {
+      margin: auto;
+    }
+
+    .laptop-text p {
+      margin: auto;
+    }
+
+    .laptop-img-container {
+      display: block;
+      width: 50%;
+      height: auto;
+      overflow: hidden;
+    }
+
+    .laptop-img-container img {
+      width: 130%;
+    }
+
+  }
+
+  @media screen and (min-width:1400px) {
+
+    .laptop-text h1 {
+      font-size: 1.75rem;
+    }
+
+    .laptop-text p {
+      font-size: 1.4rem;
+    }
+
+    .laptop-text button {
+      font-size: 1.5rem;
+    }
+
+  }
+
+  /*END MEDIA QUERY*/
+
+/*---*/
+
+/*Large Screen Split*/
+
+@media screen and (min-width: 700px) {
+  .large-screen-split {
+    display: flex;
+    width: 100%;
+  }
+}
+
+/*------*/
+
+/*Group Phone Section*/
+
+.phone-section-contain {
+  background: #C8553D;
+  width: 100%;
+  overflow:hidden
+}
+
+.phone-text {
+  text-align: center;
+}
+
+.phone-text h1 {
+  color: #2b2c32;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  font-size: 2.5rem;
+}
+
+.phone-text li {
+  float: none;
+  color: #2b2c32;
+  padding: .5rem;
+  display: inline-block;
+  width: 49%;
+  font-size: 2rem;
+}
+
+.phone-text button {
+  color: white;
+  background-color: #2b2c32;
+  border: none;
+  text-align: center;
+  padding: 15px;
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+.phone-group-image {
+  position: relative;
+  bottom: 0;
+  height: auto;
+  width: 70%;
+  margin: auto;
+}
+
+.phone-group-image img {
+  margin-bottom: -50px;
+  width: 100%;
+}
+
+  /*START MEDIA QUERIES*/
+
+  @media screen and (max-width: 700px) {
+
+    .phone-text h1 {
+      font-size: 2rem;
+    }
+
+    .phone-text li {
+      font-size: 1.5rem;
+    }
+
+    .phone-text button {
+      font-size: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .phone-group-image img {
+      margin-bottom: -20px;
+    }
+
+  }
+
+  @media screen and (min-width: 700px) {
+
+    .phone-section-contain {
+      width: 50%;
+    }
+
+  }
+
+  /*END MEDIA QUERIES*/
+
+/*---*/
+
+/*Laptop2 Section*/
+
+.laptop2-section-contain {
+  background: #2b2c32;
+  width: 100%;
+  overflow:hidden
+}
+
+.laptop2-text {
+  text-align: center;
+}
+
+.laptop2-text h1 {
+  color: white;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  font-size: 2.5rem;
+}
+
+.laptop2-text li {
+  float: none;
+  display: block;
+  color: white;
+  padding: .5rem;
+  display: inline-block;
+  width: 49%;
+  font-size: 2rem;
+}
+
+.laptop2-text button {
+  color: white;
+  background-color: #C8553D;
+  border: none;
+  text-align: center;
+  padding: 15px;
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+.laptop2-image {
+  position: relative;
+  bottom: 0;
+  height: auto;
+  width: 80%;
+  margin: auto;
+}
+
+.laptop2-image img {
+  margin-bottom: -20px;
+  width: 100%;
+}
+
+  /*START MEDIA QUERIES*/
+
+  @media screen and (max-width: 700px) {
+
+    .laptop2-text h1 {
+      font-size: 2rem;
+    }
+
+    .laptop2-text li {
+      font-size: 1.5rem;
+    }
+
+    .laptop2-text button {
+      font-size: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+  }
+
+  @media screen and (min-width: 700px) {
+
+    .laptop2-section-contain {
+      width: 50%;
+    }
+
+  }
+
+  /*END MEDIA QUERIES*/
+
+/*---*/
+
+/*Get Started Section*/
+
+.ready-container {
+  background: url("https://techdaring.com/wp-content/uploads/2015/09/business.jpg");
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.ready-overlay {
+  position: relative;
+  background: rgba(212, 212, 212, 0.85);
+}
+
+.ready-text {
+  text-align: center;
+  padding: 2.5rem;
+}
+
+.ready-text h1 {
+  color: #2b2c32;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.ready-step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ready-step h1 {
+  text-transform: uppercase;
+  color: #2b2c32;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ready-step p {
+  color: #2b2c32;
+  font-size: 1.5rem;
+}
+
+.fa-chevron-right,
+.fa-chevron-down {
+  color: #2b2c32;
+  font-size: 2rem;
+  padding: .5rem;
+}
+
+.fa-chevron-down {
+  display: none;
+}
+
+.ready-text button {
+  color: white;
+  background-color: #2b2c32;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Bitter', sans-serif;
+  padding: 15px;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+  /*START MEDIA QUERIES*/
+
+  @media screen and (max-width: 768px) {
+
+    .ready-text h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .ready-step {
+      display: block;
+    }
+
+    .ready-step h1 {
+      font-size: 1.5rem;
+    }
+
+    .ready-step p {
+      font-size: 1.25rem;
+    }
+
+    .fa-chevron-down {
+      display: block;
+      font-size: 1.5rem;
+    }
+
+    .fa-chevron-right {
+      display: none;
+    }
+
+    .ready-text button {
+      font-size: 1.25rem;
+    }
+
+  }
+
+  @media screen and (min-width: 1000px) {
+
+    .ready-container {
+      background-position-y: -100px;
+    }
+
+  }
+
+  /*END MEDIA QUERIES*/
+
+/*---*/
+
+
+/*Hiring Section AAA*/
+
+.hiring-contain {
+  background: #2b2c32;
+  text-align: center;
+  display: flex;
+}
+
+.hiring-text-contain h1 {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.75rem;
+  margin-bottom: 0;
+  padding-top: 1rem;
+}
+
+.hiring-text-contain p {
+  color: white;
+  font-family: 'Bitter', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0;
+  padding: 1rem;
+}
+
+.hiring-contact {
+  background: #35363e;
+}
+
+.hiring-contact h1 {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.75rem;
+  padding: 1rem;
+  margin-bottom: 0;
+}
+
+.hiring-contact button {
+  color: white;
+  background-color: #C8553D;
+  border: none;
+  font-family: 'Bitter', sans-serif;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.hiring-contact p {
+  color: white;
+  font-family: 'Bitter', sans-serif;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.hiring-contact span {
+  color: #dc6147;
+}
+
+.ipad-img {
+  display: none;
+}
+
+  /*KEEP PROBLEM SECTION GROUPED*/
+
+  @media screen and (min-width: 851px) {
+
+    .hiring-contain {
+      text-align: left;
+      justify-content: center;
+    }
+
+    .hiring-text-contain {
+      margin: 0;
+      width: 40%;
+    }
+
+    .hiring-text-contain h1 {
+      font-size: 2rem;
+      padding-top: 2rem;
+      padding-left: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .hiring-text-contain p {
+      font-size: 1.35rem;
+      padding-left: 1rem;
+      padding-bottom: 2rem;
+    }
+
+    .hiring-contact {
+      border-radius: 10px;
+      text-align: center;
+      margin: auto;
+      width: 70%;
+      display: inherit;
+    }
+
+    .hiring-contact h1 {
+      font-size: 2rem;
+      padding-top: 2rem;
+      padding-bottom: 0.5rem;
+    }
+
+    .hiring-contact button {
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 1.25rem;
+    }
+
+    .hiring-contact p {
+      font-size: 1.35rem;
+      padding-top: .5rem;
+    }
+
+    .ipad-img {
+      display: inline-block;
+      margin: 0;
+      width: auto;
+      height: auto;
+    }
+
+    .ipad-img img {
+      width: 400px;
+    }
+
+  }
+
+  /*-----*/
+
+/*-----*/
+
+/*Footer Section*/
+
+.footer-container {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.foot-section {
+  width: 25%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.foot-section h1 {
+  color: #2b2c32;
+  font-size: 2rem;
+}
+
+.foot-section ul {
+  color: #2b2c32;
+}
+
+.foot-section li {
+  float: none;
+  display: block;
+  font-size: 1.5rem;
+}
+
+.foot-section li:hover {
+  color: #c8553d;
+}
+
+.foot-section i {
+  color: #2b2c32;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.foot-section i:hover {
+  color: #c8553d;
+}
+
+  /*START MEDIA QUERIES*/
+
+  @media screen and (max-width: 850px) {
+
+    .foot-section {
+      width: 50%;
+    }
+
+    .foot-section h1 {
+      font-size: 1.5rem;
+    }
+
+    .foot-section li {
+      font-size: 1.25rem;
+    }
+
+    .foot-section i {
+      font-size: 2rem;
+    }
+
+  }
+
+  /*END MEDIA QUERIES*/
+
+/*-----*/
