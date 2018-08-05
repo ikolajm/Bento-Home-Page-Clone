@@ -1,23 +1,16 @@
 //Header Background On Scroll
   var $header = $('#header');
 
-  $(window).scroll(function() {
-    if($(window).scrollTop() > 5) {
-      $header.fadeIn(function() {
-        $(this).css({
-          'background' : '#35353596',
-          'border-bottom' : 'none',
-        });
-      });
-    } else {
-      $header.fadeIn(function() {
-        $(this).css({
-          'background' : 'transparent',
-          'border-bottom' : '2px solid #35353596',
-        });
-      });
-    }
-  });
+  $(document).ready(function(){
+       $(window).scroll(function() { // check if scroll event happened
+         if ($(document).scrollTop() > 5) { // check if user scrolled more than 5 from top of the browser window
+           $header.css("background-color", "#35353596"); // if yes, then change the color of variable
+         } else {
+           $header.css("background-color", "transparent"); // if not, change it back to transparent
+         }
+       });
+     });
+
 //End Background Scroll
 
 // Nav Menu Slide
@@ -55,50 +48,14 @@
 //End Nav Menu
 
 //Client List Cycle function
-var $divs = $('div[class^="client-group"]').hide(),
-    i = 0;
+  var $divs = $('div[class^="client-group"]').hide(),
+      i = 0;
 
-(function cycle() {
-    $divs.eq(i).fadeIn(400)
-              .delay(2000)
-              .fadeOut(400, cycle);
+  (function cycle() {
+      $divs.eq(i).fadeIn(400)
+                 .delay(2000)
+                 .fadeOut(400, cycle);
 
-    i = ++i % $divs.length;
-})();
-//
-
-//Testimony Slideshow
-var $joe = $('#joe');
-var $joeDot = $('.joe-dot')
-var $jen = $('#jen');
-var $jenDot = $('.jen-dot')
-var $joe = $('#joe');
-var $joeDot = $('.joe-dot')
-var $jen = $('#jen');
-var $jenDot = $('.jen-dot')
-
-$jenDot.click(function jenclick() {
-  if ($joe.css('display', 'block')) {
-    $joe.css('display', 'none');
-      $joeDot.removeClass('active');
-    };
-    $jen.css('display', 'block');
-      $jenDot.addClass('active');
-});
-
-$joeDot.click(function jenclick() {
-  if ($jen.css('display', 'block')) {
-    $jen.css('display', 'none');
-      $jenDot.removeClass('active');
-    };
-    $joe.css('display', 'block');
-      $joeDot.addClass('active');
-});
-
-
-
-
-
-
-
+      i = ++i % $divs.length;
+  })();
 //
