@@ -48,7 +48,6 @@
 //End Nav Menu
 
 //Client List Cycle function
-<<<<<<< HEAD
   var $divs = $('div[class^="client-group"]').hide(),
       i = 0;
 
@@ -59,46 +58,4 @@
 
       i = ++i % $divs.length;
   })();
-=======
-var $divs = $('div[class^="client-group"]').hide(),
-    i = 0;
-
-(function cycle() {
-    $divs.eq(i).fadeIn(400)
-               .delay(2000)
-               .fadeOut(400, cycle);
-
-    i = ++i % $divs.length;
-})();
-//
-
-//Testimony Slideshow
-var $joe = $('#joe');
-var $joeDot = $('.joe-dot')
-var $jen = $('#jen');
-var $jenDot = $('.jen-dot')
-var $joe = $('#joe');
-var $joeDot = $('.joe-dot')
-var $jen = $('#jen');
-var $jenDot = $('.jen-dot')
-
-$jenDot.click(function jenclick() {
-  if ($joe.css('display', 'block')) {
-    $joe.css('display', 'none');
-      $joeDot.removeClass('active');
-    };
-    $jen.css('display', 'block');
-      $jenDot.addClass('active');
-});
-
-$joeDot.click(function jenclick() {
-  if ($jen.css('display', 'block')) {
-    $jen.css('display', 'none');
-      $jenDot.removeClass('active');
-    };
-    $joe.css('display', 'block');
-      $joeDot.addClass('active');
-});
-
->>>>>>> d70949a0c13ba4dc4a0649b0f38a9a6b1774d24e
 //
